@@ -11,10 +11,7 @@
             font-family: 'Kanit';
             src: url(./Kanit/Kanit-Regular.ttf);
         }
-        body {
-            font-family: 'Kanit';
-            background-color: aqua;
-        }
+        
         #register {
             font-size: 24px;
             color: yellow;
@@ -31,28 +28,19 @@
             display: flex;
             flex-direction: row-reverse;
         }
-        /* top , bottom , left , right */
-        .relative {
-            position: relative;
-            left: 20px;
+        .right {
+            float: right;
         }
-        .absolute { 
-            position: absolute;
-            top: 0px;
-            right: 0px;
+        .left {
+            float: left;
         }
-        .fixed {  
-            position: fixed;
-            top: 0px;
-            right: 0px;
+        .image {
+            background-image: url("https://picsum.photos/seed/picsum/200/300");
+            height: 200px;
+            width: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
-        .sticky {
-            position: sticky;
-            top: 50px;
-        }
-       .container {
-        height: 1800px;
-       }
 
     </style>
 
@@ -60,12 +48,13 @@
 <body>
     <!-- form-->
     
-    <div class="container">
-        <div class="static">Static</div>
-        <div class="relative">Relative</div>
-        <div class="absolute">Absolute</div>
-        <div class="fixed">Fixed</div>
-        <div class="sticky">Sticky</div>
+    <div class="image"></div>
+
+    <div class="left">      
+        Index
+    </div>
+    <div class="left">
+        Toma 555555555555
     </div>
 
     <div id="register">Register form</div>
